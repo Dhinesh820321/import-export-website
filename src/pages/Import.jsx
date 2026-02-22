@@ -12,7 +12,7 @@ function Import() {
         sx={{
           py: { xs: 8, md: 12 },
           textAlign: 'center',
-          background: 'linear-gradient(135deg, #8C6620 0%, #BF8C2C 60%, #D4A84B 100%)',
+          background: 'linear-gradient(135deg, #0D3B13 0%, #1B5E20 50%, #2E7D32 100%)',
           color: '#fff',
           position: 'relative',
           overflow: 'hidden',
