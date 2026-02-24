@@ -64,7 +64,7 @@ function Navbar() {
         }}
       >
         <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ py: 0.5 }}>
+          <Toolbar disableGutters sx={{ py: 1.5 }}>
             {/* Logo & Brand */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -78,14 +78,14 @@ function Navbar() {
                 to="/"
                 sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
               >
-                <Box
+    <Box
   component="img"
   src={logo}
   alt="Mamma's Spices & Nuts"
   sx={{
-    height: 48,
-    width: '120',
-    mr: 1,
+    height: { xs: 55, sm: 65, md: 80 },  // responsive size
+    width: 'auto',
+    mr: 2,
     objectFit: 'contain',
   }}
 />
