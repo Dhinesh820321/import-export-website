@@ -8,7 +8,7 @@ export const exportProducts = [
   },
   {
     name: 'Moringa Products',
-    image: 'moringaproduct.png',
+    image: 'moringaproduct.jpg',
     description:
       'Organic moringa leaves, powder, and oil — nature\'s superfood packed with vitamins and antioxidants. Sustainably farmed and processed under strict quality controls.',
     badge: 'Organic',
