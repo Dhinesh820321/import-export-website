@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PublicIcon from '@mui/icons-material/Public';
 
-const images = ['herosection1.png', 'herosection2.png'];
+const images = ['herosection1.png','herosection2.png']; 
 
 function HeroSection() {
   const [current, setCurrent] = useState(0);
