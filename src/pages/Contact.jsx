@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: <EmailIcon sx={{ fontSize: 28, color: 'primary.main' }} />,
     title: 'Email Us',
-    lines: ['info@mammasspices.com', 'exports@mammasspices.com'],
+    lines: ['sales@mammaspicesexim.com', 'way@mammasspices.com'],
   },
   {
     icon: <PhoneIcon sx={{ fontSize: 28, color: 'primary.main' }} />,
