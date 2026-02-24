@@ -18,7 +18,10 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+// import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+
+// logo image - place your logo file under src/assets and adjust the filename if needed
+import logo from '../assets/logo.png';
 
 const navItems = [
   { label: 'Home', path: '/' },
@@ -69,22 +72,37 @@ function Navbar() {
               transition={{ duration: 0.5, ease: 'easeOut' }}
               style={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}
             >
-              <LocalShippingIcon sx={{ mr: 1.5, fontSize: 32 }} />
-              <Typography
-                variant="h6"
+              {/* replace icon with actual logo image */}
+              <Box
                 component={RouterLink}
                 to="/"
-                sx={{
-                  color: 'inherit',
-                  textDecoration: 'none',
-                  fontWeight: 800,
-                  fontFamily: '"Poppins", sans-serif',
-                  fontSize: { xs: '1rem', sm: '1.25rem' },
-                  letterSpacing: '0.01em',
-                }}
+                sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
               >
-                Mamma's Spices & Nuts
-              </Typography>
+                <Box
+  component="img"
+  src={logo}
+  alt="Mamma's Spices & Nuts"
+  sx={{
+    height: 48,
+    width: '120',
+    mr: 1,
+    objectFit: 'contain',
+  }}
+/>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    color: 'white',
+                    textDecoration: 'none',
+                    fontWeight: 800,
+                    fontFamily: '"Poppins", sans-serif',
+                    fontSize: { xs: '1rem', sm: '1.25rem' },
+                    letterSpacing: '0.01em',
+                  }}
+                >
+                  Mamma's Spices & Nuts
+                </Typography>
+              </Box>
             </motion.div>
 
             {/* Desktop Navigation */}

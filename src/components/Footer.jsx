@@ -8,6 +8,7 @@ import {
   Link,
   Divider,
 } from '@mui/material';
+import logo from '../assets/logo.png';
 import { motion } from 'framer-motion';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -16,7 +17,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import ScrollReveal from '../animations/ScrollReveal';
 
 const quickLinks = [
@@ -31,7 +31,7 @@ const socialLinks = [
   { icon: <FacebookIcon />, url: '#', label: 'Facebook' },
   { icon: <TwitterIcon />, url: '#', label: 'Twitter' },
   { icon: <LinkedInIcon />, url: '#', label: 'LinkedIn' },
-  { icon: <InstagramIcon />, url: '#', label: 'Instagram' },
+  { icon: <InstagramIcon />, url: 'https://www.instagram.com/mammaspicesandnuts?igsh=dzhneW8wamludnIz', label: 'Instagram' },
 ];
 
 function Footer() {
@@ -69,7 +69,17 @@ function Footer() {
           <Grid size={{ xs: 12, md: 4 }}>
             <ScrollReveal>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <LocalShippingIcon sx={{ mr: 1, fontSize: 28 }} />
+               <Box
+  component="img"
+  src={logo}
+  alt="Mamma's Spices & Nuts"
+  sx={{
+    height: 40,
+    width: 'auto',
+    mr: 1,
+    objectFit: 'contain',
+  }}
+/>
                 <Typography variant="h6" fontWeight={800} fontFamily='"Poppins", sans-serif'>
                   Mamma's Spices & Nuts
                 </Typography>

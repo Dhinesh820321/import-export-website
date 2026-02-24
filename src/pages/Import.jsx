@@ -39,7 +39,7 @@ function Import() {
           >
             <Typography
               variant="overline"
-              sx={{ letterSpacing: 3, color: '#fff', fontWeight: 700 }}
+              sx={{ letterSpacing: 3, color: '#ffa700', fontWeight: 700 }}
             >
               Import Division
             </Typography>
